@@ -434,7 +434,7 @@ function update() {
     updateParticles(); return;
   }
 
-  const spd = 3.2, jumpForce = -9.5, gravity = 0.1, friction = 0.85;
+  const spd = 3.2, jumpForce = -9.5, gravity = 0.25, friction = 0.85;
   if (keys.left) { player.vx -= spd * 0.3; player.facing = -1; }
   if (keys.right) { player.vx += spd * 0.3; player.facing = 1; }
   player.vx *= friction;
